@@ -1,7 +1,10 @@
 import axios from "axios";
 
+// "http://waysbucks-by-faequl.up.railway.app/api/v1"
+// "http://localhost:5000/api/v1"
+
 export const API = axios.create({
-   baseURL: "http://localhost:5000/api/v1",
+   baseURL: "process.env.REACT_APP_BASEURL",
 });
 
 export const setAuthToken = (token) => {
